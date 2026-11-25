@@ -8,7 +8,9 @@ import { join } from "node:path";
 //
 // The emoji is U+1F9ED COMPASS. In JavaScript its .length is 2 (a surrogate
 // pair), so the gate below counts code points with the spread operator:
-// exactly 1 code point, 4 bytes UTF-8, no trailing newline.
+// exactly 1 code point, 4 bytes UTF-8, no trailing newline. Four bytes is
+// also the smallest an emoji entry can be, and the house tie-break favours
+// the smaller text when two entries tie on win rate.
 
 // The emoji: 🧭 — a compass. This agent navigates the web on its own,
 // weighs options, picks a direction, and moves. A compass says that in one
